@@ -13,6 +13,8 @@ export default function SearchInfo(props) {
       <span className="min-temp">{Math.round(props.data.tempMin)}°</span>/{""}
       <span className="max-temp">{Math.round(props.data.tempMax)}°</span>
       <div>{props.data.description}</div>
+      <div>Wind:{Math.round(props.data.wind)}</div>
+      <div>Humidity:{props.data.humidity}%</div>
       <div className="row">
         <div className="col"></div>
       </div>
