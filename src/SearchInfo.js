@@ -1,7 +1,6 @@
 import React from "react";
-import FormattedDate from "./FormattedDate";
 import "./SearchInfo.css";
-import WeatherForecastDay from "./WeatherForecastDay";
+import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 
 export default function SearchInfo(props) {
@@ -14,14 +13,8 @@ export default function SearchInfo(props) {
       <span className="min-temp">{Math.round(props.data.tempMin)}°</span>/{""}
       <span className="max-temp">{Math.round(props.data.tempMax)}°</span>
       <div>{props.data.description}</div>
-      <hr />
       <div className="row">
-        <div className="col">
-          <div>mon</div>
-          <div>img</div>
-          <div>22/16</div>
-          <WeatherForecastDay />
-        </div>
+        <div className="col"></div>
       </div>
     </div>
   );
